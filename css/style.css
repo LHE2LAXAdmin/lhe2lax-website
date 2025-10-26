@@ -1,0 +1,91 @@
+/* Custom Styles for LHE2LAX - Final Scheme */
+
+/* Branding Color: Using Charcoal Gray (#2c3e50) for the 'primary' color */
+:root {
+    --bs-primary: #2c3e50; 
+    --bs-warning: #ffc107; /* Standard yellow/orange for buttons */
+    --bs-light-cta: #f0f7f4; /* Soft Cream for CTA Background */
+    --bs-text-dark-gray: #444444; /* Standard Paragraph Text Color */
+    --bs-accent-color: #548809; /* Deep Lime for Pillar Headings (H2s) */
+    --bs-blue-accent: #0d6efd; /* Explicit Blue for Rotating Banner (H3s) */
+    --bs-logo-color: #EA4335; /* FINAL: Vibrant Orange for Logo Text */
+}
+
+/* Global Overrides */
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+/* --- H2s are Deep Lime (Accent Color) --- */
+h2 {
+    color: var(--bs-accent-color) !important; 
+}
+
+/* Ensure paragraph and list text is a soft, readable gray */
+p, li {
+    color: var(--bs-text-dark-gray);
+}
+/* ... rest of the CSS remains unchanged ... */
+
+/* Global Font/Spacing Improvements */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+/* Header Text Enhancements */
+.display-5 {
+    font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+    .display-5 {
+        font-size: 3.5rem;
+    }
+}
+
+/* Custom adjustments for the Swiper Slides (Rotating Banner) */
+.swiper-slide {
+    min-height: 180px;
+    padding: 30px !important; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #ddd !important;
+}
+
+.swiper-slide:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important; 
+}
+
+/* Call to Action Button Style */
+.btn-warning {
+    background-color: var(--bs-warning) !important;
+    border-color: var(--bs-warning) !important;
+    color: #333 !important;
+    font-weight: 700;
+}
+
+/* Blog Tip Cards - Ensuring they look distinct */
+.card {
+    border-radius: 10px;
+}
+
+/* Simple Blog Post List Link Style */
+.blog-post-item a:hover {
+    color: var(--bs-primary) !important;
+}
+/* Custom CSS for About Page Split-Screen Layout */
+.image-column {
+    /* Ensures the image fills the space and content stays aligned */
+    display: flex;
+    align-items: center; 
+    padding: 0 !important; /* Remove internal padding to allow image to hit edge */
+}
+
+/* Optional: To make the image container match the text height */
+@media (min-width: 992px) { 
+    .image-fill {
+        height: 100%;
+        object-fit: cover; /* Ensures image covers the space without stretching */
+    }
+}

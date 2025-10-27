@@ -1,4 +1,5 @@
 /* Custom Styles for LHE2LAX - Final Color Scheme */
+/* Project Version: V2.1 - Post-Deployment Cleanup & Final Sync */
 
 /* --------------------------------------------------- */
 /* 1. BRAND COLOR PALETTE (Defined in :root) */
@@ -92,20 +93,6 @@ body {
 
 /* Simple Blog Post List Link Style (Maintains link integrity) */
 .blog-post-item a:hover {
-    color: var(--bs-primary) !important;
+    color: var(--bs-primary) !important; /* Link hover uses Charcoal Gray */
 }
-/* Custom CSS for About Page Split-Screen Layout */
-.image-column {
-    /* Ensures the image fills the space and content stays aligned */
-    display: flex;
-    align-items: center; 
-    padding: 0 !important; /* Remove internal padding to allow image to hit edge */
-}
-
-/* Optional: To make the image container match the text height */
-@media (min-width: 992px) { 
-    .image-fill {
-        height: 100%;
-        object-fit: cover; /* Ensures image covers the space without stretching */
-    }
-}
+/* FINAL COMMIT MARKER */

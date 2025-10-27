@@ -93,4 +93,4 @@ body {
 /* Simple Blog Post List Link Style (Maintains link integrity) */
 .blog-post-item a:hover {
     color: var(--bs-primary) !important; /* Link hover uses Charcoal Gray */
-}
+} 
